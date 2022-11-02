@@ -1,0 +1,392 @@
+:root {
+  --swiper-theme-color: #f79142;
+}
+$screen-xs-max: 380px;
+$screen-sm-max: 480px;
+$screen-md-max: 767px;
+$screen-lg-max: 960px;
+$screen-xl-max: 1200px;
+$screen-xxl-max: 1600px;
+$screen-xxxl-max: 1920px;
+
+@mixin xs {
+  @media screen and (max-width:#{$screen-xs-max}) {
+    @content;
+  }
+}
+@mixin sm {
+  @media screen and (max-width:#{$screen-sm-max}) {
+    @content;
+  }
+}
+@mixin md {
+  @media screen and (max-width:#{$screen-md-max}) {
+    @content;
+  }
+}
+@mixin lg {
+  @media screen and (max-width:#{$screen-lg-max}) {
+    @content;
+  }
+}
+@mixin xl {
+  @media screen and (max-width:#{$screen-xl-max}) {
+    @content;
+  }
+}
+@mixin xxl {
+  @media screen and (max-width:#{$screen-xxl-max}) {
+    @content;
+  }
+}
+@mixin xxxl {
+  @media screen and (max-width:#{$screen-xxxl-max}) {
+    @content;
+  }
+}
+
+@mixin titleh2 {
+  font-size: 1.52em;
+  color: #f79142;
+  transition: color 0.3s;
+  display: inline-block;
+  position: relative;
+  padding: 0px 20px 10px 20px;
+  
+  @include xl {
+    font-size: 1.3em;
+  }
+  @include xs {
+    font-size: 1em;
+  }
+
+  &:hover {
+    &:before {
+      left: 0;
+
+      width: 100%;
+
+      transition: 0.5s;
+    }
+  }
+  &:before {
+    position: absolute;
+    bottom: -6px;
+    right: 0;
+
+    width: 0;
+    height: 2px;
+
+    content: "";
+    transition: 0.5s;
+    background-color: #f79142;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  list-style: none;
+  font-size: 16px;
+  box-sizing: border-box;
+}
+.review {
+  text-align: center;
+  h2 {
+    @include titleh2();
+  }
+  margin-bottom: 220px;
+  @include md {
+    margin-bottom: 80px;
+  }
+  .swiper {
+    @include md {
+      .swiper-button-prev {
+        display: none;
+      }
+      .swiper-button-next {
+        display: none;
+      }
+    }
+
+    height: 400px !important;
+    width: 100%;
+    height: 300px;
+    margin: 50px auto;
+    @include md {
+      height: 346px !important;
+      margin: 20px auto;
+    }
+    span {
+      color: #606060;
+    }
+    .swiper-wrapper {
+      height: 94%;
+      @include md {
+        height: 92%;
+      }
+    }
+
+    .prepend-2-slides {
+      display: none;
+    }
+    .swiper-slide {
+      width: 385px !important;
+      @include md {
+        width: 285px !important;
+      }
+      margin-top: 20px;
+      @include md {
+        margin-top: 20px;
+      }
+      margin-bottom: 0px;
+      margin-right: 35px;
+      border-radius: 2%;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+      img {
+        display: block;
+        width: 100%;
+
+        object-fit: cover;
+      }
+      p {
+        color: #606060;
+      }
+      a {
+        height: 100%;
+        padding-top: 20px;
+        @include md {
+          padding-top: 10px;
+        }
+        .imageBox {
+          display: flex;
+          justify-content: space-around;
+          width: 100%;
+          overflow: hidden;
+          padding-left: 10px;
+          padding-right: 10px;
+          p {
+            color: #f79142;
+            font-weight: 600;
+            letter-spacing: -1px;
+            font-size: 1.1em;
+            text-align: left;
+            padding-bottom: 5px;
+          }
+          .rightSide {
+            text-align: right;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .textBox {
+          padding: 15px 20px;
+          text-align: left;
+          h3 {
+            margin-top: 15px;
+            color: #606060;
+            padding-bottom: 10px;
+            @include md {
+              margin-top: 6px;
+              padding-bottom: 6px;
+            }
+          }
+          p {
+            color: rgb(109, 109, 109);
+            font-weight: 400;
+            /* width: 294px; */
+            height: 57px;
+            overflow: hidden;
+            font-size: 1em;
+            @include md {
+              font-size: 0.9em;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.eventing {
+  text-align: center;
+  margin-bottom: 220px;
+  @include md {
+    margin-bottom: 80px;
+  }
+  h2 {
+    @include titleh2();
+  }
+  .swiper {
+    @include md {
+      .swiper-button-prev {
+        display: none;
+      }
+      .swiper-button-next {
+        display: none;
+      }
+    }
+
+    height: 450px !important;
+    @include md {
+      height: 415px !important;
+    }
+    width: 100%;
+
+    margin: 50px auto;
+    span {
+      color: #606060;
+    }
+    .swiper-wrapper {
+      height: 94%;
+    }
+
+    .prepend-2-slides {
+      display: none;
+    }
+    .swiper-slide {
+      width: 330px !important;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      border-radius: 2%;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      text-align: center;
+      @include md {
+        width: 285px !important;
+      }
+
+      a {
+        height: 100%;
+        padding-top: 20px;
+        .imageBoxEvent {
+          padding-top: 20px;
+          width: 270px;
+          margin: auto;
+          @include md {
+            width: 234px;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .textBox {
+          padding: 0px 30px;
+          text-align: left;
+          h3 {
+            margin-top: 10px;
+            color: #606060;
+            padding-bottom: 10px;
+          }
+          p {
+            color: rgb(109, 109, 109);
+            font-weight: 400;
+            /* width: 294px; */
+            height: 57px;
+            overflow: hidden;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+.modeling {
+  text-align: center;
+  margin-bottom: 220px;
+  @include md {
+    margin-bottom: 80px;
+  }
+  h2 {
+    @include titleh2();
+  }
+  .swiper {
+    @include md {
+      .swiper-button-prev {
+        display: none;
+      }
+      .swiper-button-next {
+        display: none;
+      }
+    }
+
+    height: 450px !important;
+    @include md {
+      height: 415px !important;
+    }
+    width: 100%;
+
+    margin: 50px auto;
+    span {
+      color: #606060;
+    }
+    .swiper-wrapper {
+      height: 94%;
+    }
+
+    .prepend-2-slides {
+      display: none;
+    }
+    .swiper-slide {
+      width: 330px !important;
+      margin-top: 20px;
+      margin-bottom: 0px;
+      border-radius: 2%;
+      box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+      text-align: center;
+      @include md {
+        width: 285px !important;
+      }
+
+      a {
+        height: 100%;
+        padding-top: 20px;
+        .imageBoxEvent {
+          padding-top: 20px;
+          width: 270px;
+          margin: auto;
+          @include md {
+            width: 234px;
+          }
+          img {
+            width: 100%;
+          }
+        }
+        .textBox {
+          padding: 0px 30px;
+          text-align: left;
+          h3 {
+            margin-top: 10px;
+            color: #606060;
+            padding-bottom: 10px;
+          }
+          p {
+            color: rgb(109, 109, 109);
+            font-weight: 400;
+            /* width: 294px; */
+            height: 57px;
+            overflow: hidden;
+            font-size: 0.9em;
+          }
+        }
+      }
+    }
+  }
+}
+// hamburger

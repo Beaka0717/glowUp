@@ -1,0 +1,257 @@
+#banner{
+    max-width: 1920px;
+    /* max-height: 450px; */
+    margin: auto;
+}
+#banner img{
+    width: 100%;
+    
+}
+.swiper span{
+    color: #444;
+}
+.swiper-button-next, .swiper-button-prev{
+color: #F79142 !important;
+}
+.cardWrapper{
+    /* background-color: antiquewhite; */
+    margin-left: 50px;
+}
+.hospitalCard{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    max-width: 450px;
+    justify-content: center;
+    margin: 10px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0px 30px;
+}
+.hospitalCard span{
+    color: #444;
+}
+.hospitalCard .imageBox{
+    width: 200px;
+}
+.hospitalCard .imageBox img{
+    width: 100%; 
+ } 
+.hospitalCard .textBox{
+    width: 200px; 
+
+}
+.hospitalCard .textBox h6{
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align:left;
+
+}
+
+.hospitalCard .textBox h6::after{ 
+    content:"";
+    background-image: url(../icons/star.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    margin-left: 55px;
+}
+/* // .hospitalCard .textBox h6::after{ 
+//     content:"9.8";
+//     font-size: 00.8em;
+//     font-weight: 400;
+//     position: absolute;
+//     right: 10%;
+//     top: ;
+// } */
+
+.hospitalCard .textBox p{
+    margin: 30px 0px;
+    opacity: 0.9;
+
+}
+.hospitalCard .textBox span{
+    position: absolute;
+    top: 15.6%;
+    right: 55%;
+    font-size: 0.95em;
+    opacity: 0.9;
+}
+.number span{
+    position: absolute;
+    bottom: 13.8%;
+    left: 11%;
+    font-size: 0.9em;
+    opacity: 0.8;
+}
+
+.hospitalCard .textBox p::after{
+    content: "";
+    background-image: url("../icons/color-heart.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 3.5%;
+    bottom: 10%;
+    
+}
+.hospitalCard .textBox h4{
+margin: 20px;
+}
+.more-btn{
+    position: absolute;
+    bottom: 14%;
+    left: 30%;
+}
+.more-btn p{
+    font-size: 0.9em;
+    text-decoration:underline;
+}
+.more-btn p:hover{
+    color: #F79142;
+}
+.UpContainer h4{
+    padding-top: 130px;
+    padding-bottom: 30px;
+    display: inline-block;
+   
+}
+@media only screen and (max-width:767px){
+    .UpContainer h4{
+        margin-top: 00px;
+        margin-bottom: 30px;
+    }
+    .swiper-button-next, .swiper-button-prev{
+        display: none !important;
+        }
+
+    .UpContainer{
+        margin-bottom: 20px;
+    }
+   
+}
+.UpContainer {
+    position: relative;
+    width: 1620px;
+    margin: auto;
+    margin-bottom: 80px;
+    text-align: center;
+}
+@media only screen and (max-width:767px){
+    .UpContainer{
+        margin-bottom: 20px;  
+        margin-top: 50px;
+    }
+}
+
+.UpContainer .leftRight li{
+    width: 15px;
+    position: absolute;
+  }
+  .UpContainer .leftRight .left{
+    right: 0%;
+    bottom: 30%;
+  }
+  .UpContainer .leftRight .right{
+    left: 0%;
+    bottom: 30%;
+  }
+
+  .cardWrapper{
+    display: flex;
+
+  }
+
+.bottom-cards{
+display: flex;
+justify-content: center;
+margin-bottom: 50px;
+flex-wrap: wrap;
+}
+@media only screen and (max-width:767px){
+    .bottom-cards{
+        margin-bottom: 0px;  
+    } 
+    
+}
+
+  .smallCard{
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    display: flex;
+    width: 450px;
+    justify-content: center;
+    border-radius: 1%;
+    margin: 10px;
+    position: relative;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    margin: 0px 30px;
+}
+@media only screen and (max-width:767px){
+    .smallCard{
+        margin: 20px 10px;  
+    } 
+    
+}
+.smallCard .imgBox{
+    width: 200px;
+}
+.smallCard .imgBox img{
+    max-width: 100%;
+}
+.smallCard .textBox{
+    width: 200px;
+
+}
+.smallCard .textBox h6{
+    font-size: 1.2em;
+    margin-top: 20px;
+    text-align:left;
+
+}
+
+.smallCard .textBox h6::after{ 
+    content:"";
+    background-image: url(../icons/star.png);
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 17px;
+    width: 17px;
+    margin-left: 55px;
+}
+.smallCard .textBox p::after{
+    content: "";
+    background-image: url("../icons/color-heart.png");
+    background-size: 100% 100%;
+    display: inline-block;
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    left: 3.5%;
+    bottom: 10%;
+    
+}
+.smallCard .textBox span {
+    position: absolute;
+    top: 15.6%;
+    right: 55%;
+    font-size: 0.95em;
+    opacity: 0.9;
+}
+.smallCard .textBox p {
+    margin: 30px 0px;
+    opacity: 0.9;
+}
+.swiper{
+    padding: 20px 0px!important;
+    
+}
+
+
+
+
+
+  

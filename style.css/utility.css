@@ -1,0 +1,58 @@
+/* utility css 는 commom css 하고 똑같다. */
+@import url('https://fonts.googleapis.com/css?family=Barlow+Semi+Condensed');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #606060;
+}
+a{
+    text-decoration: none;
+    color: #606060;
+}
+li{
+    list-style: none;
+    color: #606060;
+}
+#desktop-hidden{
+    display: none;
+}
+.innerBox_big{
+    max-width: 1920px;
+    margin: 0 auto;
+}
+.innerBox_small{
+    margin: 0 auto;
+    max-width: 1200px;
+    
+}
+.font_s_big{
+    font-size: 1.4em;
+    font-weight: 500;
+}
+.top-margin{
+    margin-top: 70px;
+}
+.title-mobile{
+   font-size: 1.2em;
+   font-weight: 400;
+   text-align: left;   
+}
+.orange_colored{
+    color: #F79142 ;
+}
+.mb{
+    margin-bottom: 80px;
+}
+.center{
+    text-align: center;
+}
+
+@media only screen and (min-width:767px){
+.desktop-hidden{
+    display: none;
+}
+}
